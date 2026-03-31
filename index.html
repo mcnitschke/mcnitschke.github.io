@@ -1,135 +1,208 @@
 <!DOCTYPE html>
-<!--
-    Plain-Academic by Vasilios Mavroudis
-    Released under the Simplified BSD License/FreeBSD (2-clause) License.
-    https://github.com/mavroudisv/plain-academic
--->
-
 <html lang="en">
 <head>
-  <title>Matthew Cody Nitschke</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matthew Cody Nitschke</title>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css">
+
+  <style>
+    body {
+      padding-top: 0;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .navbar {
+      margin-bottom: 30px;
+      border-radius: 0;
+    }
+
+    .name-heading {
+      font-family: 'Oswald', sans-serif;
+      font-size: 36px;
+      margin-top: 0;
+    }
+
+    .profile-img {
+      max-width: 160px;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    .bio {
+      margin-bottom: 30px;
+      text-align: justify;
+    }
+
+    .feature-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 25px 0 35px;
+    }
+
+    .feature-links a img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: opacity 0.2s ease;
+    }
+
+    .feature-links a img:hover {
+      opacity: 0.85;
+    }
+
+    .sidebar-section {
+      margin-bottom: 30px;
+    }
+
+    .social-icon {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+
+    .publications-section {
+      margin-top: 40px;
+    }
+
+    .paper-list li {
+      margin-bottom: 12px;
+    }
+
+    .footer-credit {
+      color: #b5bec9;
+      font-size: 0.8em;
+      float: right;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 767px) {
+      .feature-links {
+        justify-content: center;
+      }
+
+      .name-heading {
+        font-size: 30px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-
-<!-- Navigation -->
-	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-	  <div class="container">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-		</div>
-
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav">
-				  <li><a href="index.html">Home</a></li>
-				  <li><a href="#">Projects</a></li>
-				  <li><a href="#publications">Publications</a></li> 
-				  <li><a href="#">CV</a></li> 
-		  </ul>
-		</div>
-	  </div>
-	</nav>
-  
-  <!-- Page Content -->
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
     <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Matthew Cody Nitschke</a>
+      </div>
 
-        <div class="row">
+      <div class="collapse navbar-collapse" id="main-navbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="cv.html">CV</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-            <!-- Entries Column -->
-            <div class="col-md-8" style="height: 100vh;">
-                
-                <!-- Main Image -->
-		    <img  width="105" height="121" "img-responsive" src="IMG_2546.jpg" alt=""><br>
-                
-                <div style="margin-top:3%; text-align:justify;">                
-			
-	<p>I am an applied mathematician whose research broadly focuses on developing mechanistic models of biological and evolutionary processes.  
-	Currently, I am a member of the Global Ecology Laboratory at Flinders University in Adelaide, South Australia working within
-    the Australian Research Council Centre of Excellence for Indigenous and Environmental Histories and Futures.  
-	</p>
-				</div>
-    <div style="margin-top: 5px;">
-  <a href="projects.html" target="_blank" style="margin-right: 20px;">
-    <img src="multicellular.webp" alt="Projects" width="200" height="200">
-  </a>
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
 
-  <a href="publications.html" target="_blank" style="margin-right: 20px;">
-    <img src="image1.png" alt="Publications" width="200" height="200">
-  </a>
+      <!-- Main Content -->
+      <div class="col-md-8">
+        <img class="img-responsive profile-img" src="IMG_2546.jpg" alt="Matthew Cody Nitschke">
 
-  <a href="cv.html" target="_blank">
-    <img src="TindaleMap_FULL.png" alt="CV" width="220" height="200">
-  </a>
-</div>
-					
-
-	<li class="paper">
-   <a href="papers/my-paper.pdf" target="_blank">Full title</a>
-    Names of the authors
-    </li>				
-                </div>
-
-				<a href="https://www.linkedin.com/in/your-profile/" target="_blank">
-  <img src="linkedin.png" alt="LinkedIn" width="32">
-</a>
-            </div> 
-
-            <!-- Contact Info on the Sidebar -->
-            <div class="col-md-4">
-                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Matthew Cody Nitschke</b></div><br>
-                <p>Global Ecology Lab<br>
-                Flinders University<br>
-                Adelaide <br>
-                Australia <br>
-                </p>
-            </div>
-            
-            
-            <!-- Links on the Sidebar -->
-            <div class="col-md-4" style="margin-top:2%">
-              <dd><a href="#">Google Scholar</a></dd> 
-              <dd><a href="#">Twitter</a></dd>
-              <dd><a href="#">LinkedIn</a></dd>
-            </div>
-            
-            
-            <!-- Publications -->
-            <div class="col-md-8" style="height: 100vh;">    
-                <h2 id="publications">Publications</h2>
-                
-                <strong>Peer-reviewed</strong><br/>
-                <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a> Names of the authors</li>
-                </ul>
-            
-                <strong>Technical Reports</strong><br/>
-                <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a>. Details of the report</li>
-                </ul>
-            </div>
-
-            
+        <div class="bio">
+          <p>
+            I am an applied mathematician whose research broadly focuses on developing
+            mechanistic models of biological and evolutionary processes.
+            Currently, I am a member of the Global Ecology Laboratory at Flinders University
+            in Adelaide, South Australia, working within the Australian Research Council
+            Centre of Excellence for Indigenous and Environmental Histories and Futures.
+          </p>
         </div>
 
+        <div class="feature-links">
+          <a href="projects.html" target="_blank">
+            <img src="multicellular.webp" alt="Projects">
+          </a>
+
+          <a href="publications.html" target="_blank">
+            <img src="image1.png" alt="Publications">
+          </a>
+
+          <a href="cv.html" target="_blank">
+            <img src="TindaleMap_FULL.png" alt="CV">
+          </a>
+        </div>
+
+        <div class="publications-section">
+          <h2 id="publications">Publications</h2>
+
+          <strong>Peer-reviewed</strong>
+          <ul class="paper-list">
+            <li>
+              <a href="papers/my-paper.pdf" target="_blank">Full title</a> — Names of the authors
+            </li>
+          </ul>
+
+          <strong>Technical Reports</strong>
+          <ul class="paper-list">
+            <li>
+              <a href="#">Full title</a> — Details of the report
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-md-4">
+        <div class="sidebar-section">
+          <h1 class="name-heading">Matthew Cody Nitschke</h1>
+          <p>
+            Global Ecology Lab<br>
+            Flinders University<br>
+            Adelaide<br>
+            Australia
+          </p>
+        </div>
+
+        <div class="sidebar-section">
+          <p><a href="#">Google Scholar</a></p>
+          <p><a href="#">Twitter</a></p>
+          <p><a href="#">LinkedIn</a></p>
+        </div>
+
+        <div class="sidebar-section">
+          <a href="https://www.linkedin.com/in/your-profile/" target="_blank">
+            <img class="social-icon" src="linkedin.png" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
 
     </div>
-    <!-- /.container -->
-    
-    <!-- Other people may like it too! -->
-    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
-    
-</body>
 
+    <a class="footer-credit" href="https://github.com/mavroudisv/plain-academic">
+      Plain Academic
+    </a>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
 </html>
