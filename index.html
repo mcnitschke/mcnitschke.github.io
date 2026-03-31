@@ -10,9 +10,10 @@
 
   <style>
     body {
-      padding-top: 0;
       font-size: 16px;
       line-height: 1.7;
+      background-color: #fff;
+      color: #222;
     }
 
     .navbar {
@@ -24,6 +25,7 @@
       font-family: 'Oswald', sans-serif;
       font-size: 36px;
       margin-top: 0;
+      margin-bottom: 20px;
     }
 
     .profile-img {
@@ -40,21 +42,38 @@
 
     .feature-links {
       display: flex;
-      gap: 20px;
+      gap: 25px;
       flex-wrap: wrap;
-      margin: 25px 0 35px;
+      margin: 30px 0 40px;
     }
 
-    .feature-links a img {
+    .feature-item {
+      text-align: center;
+    }
+
+    .feature-item a {
+      text-decoration: none;
+      color: #222;
+    }
+
+    .feature-item img {
       width: 200px;
       height: 200px;
       object-fit: cover;
       border-radius: 8px;
+      display: block;
+      margin: 0 auto;
       transition: opacity 0.2s ease;
     }
 
-    .feature-links a img:hover {
+    .feature-item img:hover {
       opacity: 0.85;
+    }
+
+    .feature-item h3 {
+      margin-top: 12px;
+      font-size: 22px;
+      font-family: 'Oswald', sans-serif;
     }
 
     .sidebar-section {
@@ -68,7 +87,7 @@
     }
 
     .publications-section {
-      margin-top: 40px;
+      margin-top: 30px;
     }
 
     .paper-list li {
@@ -80,6 +99,7 @@
       font-size: 0.8em;
       float: right;
       margin-top: 30px;
+      margin-bottom: 20px;
     }
 
     @media (max-width: 767px) {
@@ -89,6 +109,11 @@
 
       .name-heading {
         font-size: 30px;
+      }
+
+      .feature-item img {
+        width: 180px;
+        height: 180px;
       }
     }
   </style>
@@ -130,27 +155,38 @@
         <div class="bio">
           <p>
             I am an applied mathematician whose research broadly focuses on developing
-            mechanistic models of biological and evolutionary processes.
-            Currently, I am a member of the Global Ecology Laboratory at Flinders University
-            in Adelaide, South Australia, working within the Australian Research Council
-            Centre of Excellence for Indigenous and Environmental Histories and Futures.
+            mechanistic models of biological and evolutionary processes. Currently, I am a
+            member of the Global Ecology Laboratory at Flinders University in Adelaide,
+            South Australia, working within the Australian Research Council Centre of
+            Excellence for Indigenous and Environmental Histories and Futures.
           </p>
         </div>
 
+        <!-- Image Links with Headings -->
         <div class="feature-links">
-          <a href="projects.html" target="_blank">
-            <img src="multicellular.webp" alt="Projects">
-          </a>
+          <div class="feature-item">
+            <a href="projects.html" target="_blank">
+              <img src="multicellular.webp" alt="Projects">
+              <h3>Projects</h3>
+            </a>
+          </div>
 
-          <a href="publications.html" target="_blank">
-            <img src="image1.png" alt="Publications">
-          </a>
+          <div class="feature-item">
+            <a href="publications.html" target="_blank">
+              <img src="image1.png" alt="Publications">
+              <h3>Publications</h3>
+            </a>
+          </div>
 
-          <a href="cv.html" target="_blank">
-            <img src="TindaleMap_FULL.png" alt="CV">
-          </a>
+          <div class="feature-item">
+            <a href="cv.html" target="_blank">
+              <img src="TindaleMap_FULL.png" alt="CV">
+              <h3>Curriculum Vitae</h3>
+            </a>
+          </div>
         </div>
 
+        <!-- Publications -->
         <div class="publications-section">
           <h2 id="publications">Publications</h2>
 
@@ -197,9 +233,7 @@
 
     </div>
 
-    <a class="footer-credit" href="https://github.com/mavroudisv/plain-academic">
-      Plain Academic
-    </a>
+    <a class="footer-credit" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
