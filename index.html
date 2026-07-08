@@ -42,13 +42,15 @@
 
     .feature-links {
       display: flex;
-      gap: 55px;
-      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: nowrap;
       margin: 30px 0 40px;
     }
 
     .feature-item {
       text-align: center;
+      flex: 1;
     }
 
     .feature-item a {
@@ -57,8 +59,8 @@
     }
 
     .feature-item img {
-      width: 200px;
-      height: 200px;
+      width: 180px;
+      height: 180px;
       object-fit: cover;
       border-radius: 8px;
       display: block;
@@ -110,10 +112,16 @@
     @media (max-width: 767px) {
       .feature-links {
         justify-content: center;
+        flex-wrap: wrap;
       }
 
       .name-heading {
         font-size: 30px;
+      }
+
+      .feature-item {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
       }
 
       .feature-item img {
@@ -168,28 +176,30 @@
         </div>
 
         <!-- Image Links with Headings -->
-        <h2>Reserach Areas</h2>
+        <h2>Research Areas</h2>
         <div class="feature-links">
+
           <div class="feature-item">
-            <a href="projects.html" target="_blank">
-              <img src="multicellular.webp" alt="Projects">
-              <h3>Evolution of Multicellularity</h3>
+            <a href="cv.html" target="_blank">
+              <img src="TindaleMap_FULL.png" alt="Disease Dynamics">
+              <h3>Disease Dynamics</h3>
             </a>
           </div>
 
           <div class="feature-item">
             <a href="publications.html" target="_blank">
-              <img src="image1.png" alt="Publications">
+              <img src="image1.png" alt="Human Evolution">
               <h3>Human Evolution</h3>
             </a>
           </div>
 
           <div class="feature-item">
-            <a href="cv.html" target="_blank">
-              <img src="TindaleMap_FULL.png" alt="CV">
-              <h3>Disease Dynamics</h3>
+            <a href="projects.html" target="_blank">
+              <img src="multicellular.webp" alt="Evolution of Multicellularity">
+              <h3>Evolution of Multicellularity</h3>
             </a>
           </div>
+
         </div>
 
         <!-- Publications -->
